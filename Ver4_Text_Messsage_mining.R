@@ -1,4 +1,4 @@
-# Ali Zahraei, 2013
+# Ali Zahraei, 2016
 #Text message mining.
 #THIS IS ANOTHER VERSION OF THIS CODE, MIGHT BE SLIGHTLY DIFFERENT THAN 
 # WHAT I DISCUSSED.IT DOES ANALYTICS, GRAPHICS WAS DONE BY MATLAB.
@@ -126,7 +126,7 @@ trsmses<-tm_map(trsmses, stripWhitespace)
 trsmses<-tm_map(trsmses, tolower)
 #Removal of stopwords by
 trsmses<-tm_map(trsmses, removeWords, stopwords("english"))
-dtm <- DocumentTermMatrix(trsmses) 
+dtm <- DocumentTermMatrix(trsmses)Â 
 # find words with min frequency of (80)
 repeatedwords<-findFreqTerms(dtm, 80)
 repeatedwords <- repeatedwords[4:length(repeatedwords)]
